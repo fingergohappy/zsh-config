@@ -14,7 +14,7 @@ alias so="source"
 alias dircolors='gdircolors'
 alias ll='exa --icons --color=auto --color-scale --long -u -h -U -m -H'
 alias ls='exa'
-alias cd='z'
+# alias cd='z'
 alias v='nvim'
 alias vd='neovide'
 alias svim='NVIM_START_MODE=0 nvim '

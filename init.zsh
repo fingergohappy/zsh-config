@@ -7,3 +7,5 @@ for file in "$script_dir"/*.zsh; do
     fi
 done
 
+
+export PATH=$HOME/script/shell:$HOME/script/apple-script:$PATH
