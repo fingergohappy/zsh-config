@@ -28,7 +28,7 @@ zinit light-mode for \
 ############################################################################costom config#########################################################
 
 
-zinit wait light-mode for \
+zinit wait lucid light-mode for \
     zsh-users/zsh-syntax-highlighting \
     atload'autoload -U compinit; compinit' Aloxaf/fzf-tab \
     zsh-users/zsh-completions \
@@ -38,20 +38,21 @@ zinit wait light-mode for \
 
 zinit light-mode for \
         agkozak/agkozak-zsh-prompt
+
+zinit wait lucid light-mode for \
+    OMZP::fzf
   
 # 设置 agkozak-zsh-prompt 的配置
 AGKOZAK_PROMPT_CHAR=( $ %# : )
 AGKOZAK_LEFT_PROMPT_ONLY=1
 AGKOZAK_PROMPT_DIRTRIM=20
 
-
-
-
+export FZF_CTRL_T_COMMAND='fd -H . . $HOME '
 
 # ====================
 # 自定义配置
 # ====================
-zinit wait lucid  is-snippet for \
+zinit   is-snippet for \
     "$HOME/.config/zsh/alias.zsh" \
     "$HOME/.config/zsh/config.zsh" \
     as"completion" \
