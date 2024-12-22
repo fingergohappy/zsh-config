@@ -1,7 +1,8 @@
 # ====================
 # 基础设置
+# 不下载插件不用启动
 # ====================
-source /Users/fingerfrings/script/shell/toggle-proxy.sh > /dev/null
+# source /Users/fingerfrings/script/shell/toggle-proxy.sh > /dev/null
 
 
 ### Added by Zinit's installer
@@ -31,8 +32,8 @@ zinit light-mode for \
 zinit wait lucid light-mode for \
     zsh-users/zsh-syntax-highlighting \
     atload'autoload -U compinit; compinit' Aloxaf/fzf-tab \
-    zsh-users/zsh-completions \
-    sunlei/zsh-ssh \
+    blockf  zsh-users/zsh-completions \
+    blockf  sunlei/zsh-ssh \
     atload"_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
     atload"eval $(zoxide init --cmd cd zsh)" ajeetdsouza/zoxide 
 
