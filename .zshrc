@@ -60,7 +60,10 @@ zinit   is-snippet for \
         "$HOME/.config/zsh/zoxide_complete.zsh"
 
 
-export PATH=$HOME/script/shell:$HOME/script/apple-script:$PATH
+export PATH=$HOME/script/shell:$HOME/script/apple-script:${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH
 
 # 加载 asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+#. /usr/local/opt/asdf/libexec/asdf.sh
+
+. "$HOME/.local/bin/env"
+

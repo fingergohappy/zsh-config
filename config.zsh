@@ -79,12 +79,24 @@ _fzf_comprun() {
 }
 
 # tmux config
-if [[ $TMUX != "" ]] then
+# if [[ $TMUX != "" ]] then
+#     export TERM="tmux-256color"
+# else
+#     # export TERM="xterm-256color"
+#     export TERM="wezterm"
+# fi
+
+
+if [[ -n "$TMUX" ]]; then
     export TERM="tmux-256color"
-else
-    # export TERM="xterm-256color"
+elif [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then
+    export TERM="xterm-256color"
+elif [[ -n "$WEZTERM_EXECUTABLE" ]]; then
     export TERM="wezterm"
+else
+    export TERM="xterm-256color"
 fi
+
 
 # Set colors for man pages
 function man() {
