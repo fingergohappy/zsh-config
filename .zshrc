@@ -65,5 +65,5 @@ export PATH=$HOME/script/shell:$HOME/script/apple-script:${ASDF_DATA_DIR:-$HOME/
 # 加载 asdf
 #. /usr/local/opt/asdf/libexec/asdf.sh
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
